@@ -1,0 +1,457 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "usermeta": {
+    "information": {
+      "uuid": "fe6f5b45-5c9b-4052-8a90-213110074a13",
+      "generated": "2025-08-11T06:49:31.052Z",
+      "previewImageBase64PNG": "data:image/png;base64,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",
+      "name": "Sankey Plantilla",
+      "description": "Plantilla deneb para mostrar un diagrama Sankey con opción a visualizar: \n- Origen\n- Destino\n- Métrica",
+      "author": "Rubén Hermoso"
+    },
+    "deneb": {
+      "build": "1.8.0.1",
+      "metaVersion": 1,
+      "provider": "vega",
+      "providerVersion": "6.1.2"
+    },
+    "interactivity": {
+      "tooltip": true,
+      "contextMenu": true,
+      "selection": true,
+      "selectionMode": "simple",
+      "highlight": true,
+      "dataPointLimit": 50
+    },
+    "config": "{}",
+    "dataset": [
+      {
+        "key": "__0__",
+        "name": "Origen",
+        "description": "Arrastra un campo de texto con el nombre \"Destino\"",
+        "kind": "column",
+        "type": "text"
+      },
+      {
+        "key": "__1__",
+        "name": "Destino",
+        "description": "Arrastra un campo de texto con el nombre \"Destino\"",
+        "kind": "column",
+        "type": "text"
+      },
+      {
+        "key": "__2__",
+        "name": "Valor",
+        "description": "Arrastra una métrica con el nombre \"Valor\"",
+        "kind": "measure",
+        "type": "numeric"
+      }
+    ]
+  },
+  "description": "Flow - Sankey. To show flow of money, goods, people etc.",
+  "padding": 15,
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
+  },
+  "background": "transparent",
+  "signals": [
+    {
+      "name": "titleText",
+      "value": "Sankey"
+    },
+    {
+      "name": "subTitleText",
+      "value": "To show flow of money, goods, people etc."
+    },
+    {
+      "name": "titleOffset",
+      "value": 20
+    },
+    {
+      "name": "subtitlePadding",
+      "value": 10
+    },
+    {
+      "name": "subtitleFontSize",
+      "value": 16
+    },
+    {
+      "name": "titleColor",
+      "value": "#333333"
+    },
+    {
+      "name": "color1",
+      "init": "pbiColor(0)"
+    },
+    {
+      "name": "color2",
+      "init": "pbiColor(1)"
+    },
+    {
+      "name": "color3",
+      "init": "pbiColor(2)"
+    },
+    {
+      "name": "color4",
+      "init": "pbiColor(3)"
+    },
+    {
+      "name": "color5",
+      "init": "pbiColor(4)"
+    },
+    {
+      "name": "labelColor",
+      "value": "#666666"
+    },
+    {
+      "name": "titleFontSize",
+      "value": 24
+    },
+    {
+      "name": "labelFontSize",
+      "value": 10
+    },
+    {
+      "name": "labelOffset",
+      "value": 10
+    },
+    {
+      "name": "strokeColor",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "bandPadding",
+      "value": "0.9"
+    }
+  ],
+  "data": [
+    {
+      "name": "dataset"
+    },
+    {
+      "name": "data-nodes",
+      "source": "dataset",
+      "transform": [
+        {
+          "type": "fold",
+          "fields": [
+            "__0__",
+            "__1__"
+          ],
+          "as": [
+            "key",
+            "value"
+          ]
+        },
+        {
+          "type": "formula",
+          "expr": "datum.key == 'Origen' ? datum['__0__']+'-'+datum['__1__'] : datum['__1__']+'-'+datum['__0__']",
+          "as": "link"
+        },
+        {
+          "type": "stack",
+          "groupby": [
+            "key"
+          ],
+          "sort": {
+            "field": "link",
+            "order": "descending"
+          },
+          "field": "__2__"
+        },
+        {
+          "type": "formula",
+          "expr": "(datum.y0+datum.y1)/2",
+          "as": "yc"
+        }
+      ]
+    },
+    {
+      "name": "category",
+      "source": "data-nodes",
+      "transform": [
+        {
+          "type": "aggregate",
+          "groupby": [
+            "key",
+            "value"
+          ],
+          "fields": [
+            "__2__"
+          ],
+          "ops": [
+            "sum"
+          ],
+          "as": [
+            "total"
+          ]
+        },
+        {
+          "type": "stack",
+          "groupby": [
+            "key"
+          ],
+          "sort": {
+            "field": "value",
+            "order": "descending"
+          },
+          "field": "total"
+        },
+        {
+          "type": "formula",
+          "expr": "(datum.y0+datum.y1)/2",
+          "as": "yc"
+        }
+      ]
+    },
+    {
+      "name": "Target_data-nodes",
+      "source": "data-nodes",
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "datum.key == 'Destino'"
+        }
+      ]
+    },
+    {
+      "name": "data-links",
+      "source": "data-nodes",
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "datum.key == 'Origen'"
+        },
+        {
+          "type": "lookup",
+          "from": "Target_data-nodes",
+          "key": "__row__",
+          "fields": [
+            "__row__"
+          ],
+          "as": [
+            "__1__"
+          ]
+        },
+        {
+          "type": "linkpath",
+          "orient": "horizontal",
+          "shape": "diagonal",
+          "sourceY": {
+            "expr": "scale('scaleY', datum.yc)"
+          },
+          "sourceX": {
+            "expr": "scale('scaleX', 'Origen') + bandwidth('scaleX')"
+          },
+          "targetY": {
+            "expr": "scale('scaleY', datum['__1__'].yc)"
+          },
+          "targetX": {
+            "expr": "scale('scaleX', 'Destino')"
+          }
+        },
+        {
+          "type": "formula",
+          "expr": "range('scaleY')[0]-scale('scaleY', datum['__2__'])",
+          "as": "strokeWidth"
+        }
+      ]
+    }
+  ],
+  "scales": [
+    {
+      "name": "scaleX",
+      "type": "band",
+      "range": "width",
+      "domain": [
+        "__0__",
+        "__1__"
+      ],
+      "paddingInner": {
+        "signal": "bandPadding"
+      }
+    },
+    {
+      "name": "scaleY",
+      "type": "linear",
+      "domain": {
+        "data": "data-nodes",
+        "field": "y1"
+      },
+      "range": "height"
+    },
+    {
+      "name": "scaleColor",
+      "type": "ordinal",
+      "domain": {
+        "data": "dataset",
+        "fields": [
+          "__0__",
+          "__1__"
+        ]
+      },
+      "range": [
+        {
+          "signal": "color1"
+        },
+        {
+          "signal": "color2"
+        },
+        {
+          "signal": "color3"
+        },
+        {
+          "signal": "color4"
+        },
+        {
+          "signal": "color5"
+        }
+      ]
+    },
+    {
+      "name": "scaleOpacity",
+      "type": "ordinal",
+      "domain": {
+        "data": "dataset",
+        "fields": [
+          "__0__",
+          "__1__"
+        ]
+      },
+      "range": [
+        1,
+        0.8,
+        1
+      ]
+    }
+  ],
+  "axes": [
+    {
+      "orient": "bottom",
+      "scale": "scaleX",
+      "domain": false,
+      "ticks": false,
+      "labelFontSize": {
+        "signal": "labelFontSize"
+      },
+      "labelColor": {
+        "signal": "labelColor"
+      }
+    }
+  ],
+  "marks": [
+    {
+      "name": "rect-nodes",
+      "type": "rect",
+      "from": {
+        "data": "data-nodes"
+      },
+      "encode": {
+        "update": {
+          "x": {
+            "scale": "scaleX",
+            "field": "key"
+          },
+          "y": {
+            "field": "y0",
+            "scale": "scaleY"
+          },
+          "y2": {
+            "field": "y1",
+            "scale": "scaleY"
+          },
+          "stroke": {
+            "signal": "strokeColor"
+          },
+          "fill": {
+            "scale": "scaleColor",
+            "field": "value"
+          },
+          "fillOpacity": {
+            "scale": "scaleOpacity",
+            "field": "value"
+          },
+          "width": {
+            "scale": "scaleX",
+            "band": 1
+          },
+          "tooltip": {
+            "signal": "datum['value']"
+          }
+        }
+      }
+    },
+    {
+      "type": "path",
+      "name": "path-links",
+      "from": {
+        "data": "data-links"
+      },
+      "clip": true,
+      "encode": {
+        "update": {
+          "stroke": {
+            "scale": "scaleColor",
+            "field": "__0__"
+          },
+          "strokeWidth": {
+            "field": "strokeWidth"
+          },
+          "path": {
+            "field": "path"
+          },
+          "strokeOpacity": {
+            "value": 0.35
+          },
+          "tooltip": {
+            "signal": "datum['link']+': '+datum['__2__']"
+          }
+        },
+        "hover": {
+          "strokeOpacity": {
+            "value": 1
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "from": {
+        "data": "category"
+      },
+      "interactive": false,
+      "encode": {
+        "update": {
+          "text": {
+            "field": "value"
+          },
+          "x": {
+            "scale": "scaleX",
+            "field": "key"
+          },
+          "dx": {
+            "signal": "datum.key=='Origen'?-labelOffset:bandwidth('scaleX')+labelOffset"
+          },
+          "y": {
+            "scale": "scaleY",
+            "field": "yc"
+          },
+          "fill": {
+            "scale": "scaleColor",
+            "field": "value"
+          },
+          "align": {
+            "signal": "datum.key=='Origen'?'right':'left'"
+          },
+          "baseline": {
+            "value": "middle"
+          },
+          "fontSize": {
+            "signal": "labelFontSize"
+          }
+        }
+      }
+    }
+  ]
+}
